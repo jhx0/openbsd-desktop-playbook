@@ -1,0 +1,11 @@
+---
+- name: Altering login.conf
+  copy: 
+    src: login.conf
+    dest: /etc/login.conf
+    owner: root
+    group: wheel
+    mode: '0644'
+
+- name: Generating DB
+  shell: cap_mkdb /etc/login.conf

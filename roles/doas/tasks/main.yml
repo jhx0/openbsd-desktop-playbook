@@ -1,0 +1,6 @@
+---
+- name: Configuring doas
+  template: 
+    src: doas.conf.j2
+    dest: /etc/doas.conf
+    mode: '0644' 

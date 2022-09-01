@@ -1,0 +1,3 @@
+---
+- name: Adding "{{ user_name }}" to the staff group
+  shell: usermod -G staff "{{ user_name }}"

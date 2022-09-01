@@ -1,0 +1,15 @@
+---
+- name: Enabling NTPD
+  shell: rcctl enable ntpd
+
+- name: Enabling DBUS
+  shell: rcctl enable messagebus
+
+- name: Enabling Vnstatd
+  shell: rcctl enable vnstatd
+
+- name: Enabling Uptimed
+  shell: rcctl enable uptimed
+
+- name: Enable Portmap
+  shell: rcctl enable portmap

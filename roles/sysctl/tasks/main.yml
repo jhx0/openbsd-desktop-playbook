@@ -1,0 +1,7 @@
+- name: Copying sysctl.conf
+  copy:
+    src: sysctl.conf
+    dest: /etc/
+    owner: root
+    group: wheel
+    mode: 0644

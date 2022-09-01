@@ -1,0 +1,5 @@
+---
+- name: Installing additional software
+  openbsd_pkg:
+    name: "{{ software_packages }}"
+    state: present

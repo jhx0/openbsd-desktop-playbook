@@ -1,0 +1,17 @@
+---
+- hosts: all
+  become: true
+  become_user: root
+  become_method: su
+
+  roles:
+   - login_conf
+   - group
+   - doas
+   - sysctl
+   - firmware
+   - syspatch
+   - packages
+   - sshd
+   - rcctl
+   - reboot
