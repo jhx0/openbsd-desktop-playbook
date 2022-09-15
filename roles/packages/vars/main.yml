@@ -33,5 +33,3 @@ software_packages:
    - cmus
    - conky
    - zim
-   - xfce
-   - xfce4-screenshooter

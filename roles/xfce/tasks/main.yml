@@ -1,0 +1,5 @@
+---
+- name: Installing Xfce
+  openbsd_pkg:
+    name: "{{ xfce_packages }}"
+    state: present
