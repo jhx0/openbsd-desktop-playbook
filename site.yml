@@ -12,6 +12,7 @@
    - firmware
    - syspatch
    - packages
+   - xfce
    - sshd
    - rcctl
    - reboot
