@@ -81,3 +81,4 @@ software_packages:
    - fzf
    - ranger
    - feh
+   - ansible
