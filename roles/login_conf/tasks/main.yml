@@ -9,3 +9,6 @@
 
 - name: Generating DB
   shell: cap_mkdb /etc/login.conf
+
+- name: Adding "{{ user_name }}" to staff login class
+  shell: usermod -L staff "{{ user_name }}"

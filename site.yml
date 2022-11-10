@@ -11,8 +11,9 @@
    - sysctl
    - firmware
    - syspatch
+   - sshd
    - packages
    - xfce
-   - sshd
+   - openbox
    - rcctl
    - reboot

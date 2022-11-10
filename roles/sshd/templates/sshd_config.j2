@@ -9,7 +9,7 @@
 # default value.
 
 Port {{ sshd_port }}
-#AddressFamily any
+AddressFamily inet
 #ListenAddress 0.0.0.0
 #ListenAddress ::
 
@@ -56,7 +56,7 @@ PasswordAuthentication yes
 PermitEmptyPasswords no
 
 # Change to no to disable s/key passwords
-#KbdInteractiveAuthentication yes
+KbdInteractiveAuthentication no
 
 #AllowAgentForwarding yes
 #AllowTcpForwarding yes

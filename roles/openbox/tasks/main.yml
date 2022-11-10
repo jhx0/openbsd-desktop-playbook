@@ -1,0 +1,5 @@
+---
+- name: Installing OpenBox
+  openbsd_pkg:
+    name: "{{ openbox_packages }}"
+    state: present
