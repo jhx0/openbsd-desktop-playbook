@@ -33,7 +33,7 @@ software_packages:
    - lynx
    - scrot
    - cmus
-   - conky
+   - conky--
    - viewnior
    - xdg-user-dirs-gtk
    - xdg-utils
