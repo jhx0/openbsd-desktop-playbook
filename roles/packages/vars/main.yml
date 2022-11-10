@@ -82,3 +82,4 @@ software_packages:
    - ranger
    - feh
    - ansible
+   - obsdfreqd

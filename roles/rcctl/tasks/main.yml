@@ -13,3 +13,6 @@
 
 - name: Enable Portmap
   shell: rcctl enable portmap
+
+- name: Enable obsdfreqd
+  shell: rcctl enable obsdfreqd
