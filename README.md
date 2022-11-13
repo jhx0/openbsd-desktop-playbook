@@ -14,3 +14,6 @@ $ ansible-playbook -i hosts site.yml -Kk
 
 ## NOTE:
 Make sure to install python on the target before running this playbook since Ansible needs python to be on the host to function.
+```
+target# pkg_add python
+```
