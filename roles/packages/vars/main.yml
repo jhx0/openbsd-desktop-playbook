@@ -34,7 +34,6 @@ software_packages:
    - scrot
    - cmus
    - conky--
-   - viewnior
    - xdg-user-dirs-gtk
    - xdg-utils
    - dmenu
