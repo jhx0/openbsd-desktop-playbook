@@ -2,3 +2,5 @@ openbox_packages:
    - openbox
    - tint2
    - pcmanfm
+   - picom
+   - feh
