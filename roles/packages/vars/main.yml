@@ -79,9 +79,8 @@ software_packages:
    - mediainfo
    - fzf
    - ranger
-   - feh
+   - nsxiv
    - ansible
    - obsdfreqd
-   - pcmanfm
    - stow
-   - picom
+   - i3lock
