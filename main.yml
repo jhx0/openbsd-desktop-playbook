@@ -4,6 +4,9 @@
   become_user: root
   become_method: su
 
+  vars_files:
+    - vars/main.yml
+
   handlers:
     - name: Include handlers
       import_tasks: tasks/handlers.yml

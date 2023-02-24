@@ -1,18 +1,42 @@
 ---
-  - name: Load vars
-    include_vars: vars/main.yml
+  - import_tasks: tasks/login_conf.yml
+    tags: login_conf
 
-  - include_tasks: tasks/login_conf.yml
-  - include_tasks: tasks/groups.yml
-  - include_tasks: tasks/doas.yml
-  - include_tasks: tasks/sysctl.yml
-  - include_tasks: tasks/firmware.yml
-  - include_tasks: tasks/syspatch.yml
-  - include_tasks: tasks/sshd.yml
-  - include_tasks: tasks/upgrade.yml
-  - include_tasks: tasks/packages.yml
-  - include_tasks: tasks/xfce.yml
-  - include_tasks: tasks/openbox.yml
-  - include_tasks: tasks/rcctl.yml
-  - include_tasks: tasks/xenodm.yml
-  - include_tasks: tasks/reboot.yml
+  - import_tasks: tasks/groups.yml
+    tags: groups
+
+  - import_tasks: tasks/doas.yml
+    tags: doas
+
+  - import_tasks: tasks/sysctl.yml
+    tags: sysctl
+
+  - import_tasks: tasks/firmware.yml
+    tags: firmware
+
+  - import_tasks: tasks/syspatch.yml
+    tags: syspatch
+
+  - import_tasks: tasks/sshd.yml
+    tags: sshd
+
+  - import_tasks: tasks/upgrade.yml
+    tags: upgrade
+
+  - import_tasks: tasks/packages.yml
+    tags: packages
+
+  - import_tasks: tasks/xfce.yml
+    tags: xfce
+
+  - import_tasks: tasks/openbox.yml
+    tags: openbox
+
+  - import_tasks: tasks/rcctl.yml
+    tags: rcctl
+
+  - import_tasks: tasks/xenodm.yml
+    tags: xenodm
+
+  - import_tasks: tasks/reboot.yml
+    tags: reboot
