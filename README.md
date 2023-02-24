@@ -1,6 +1,6 @@
 # openbsd-desktop-playbook
 
-Automatically setup a OpenBSD desktop (Xfce and optionally Openbox) via **Ansible**.
+Automatically setup a **OpenBSD** desktop (**Xfce** and optionally **OpenBox**) via **Ansible**.
 
 ## USAGE:
 1. Clone/download this repository
