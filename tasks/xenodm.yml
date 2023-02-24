@@ -1,0 +1,4 @@
+---
+- name: Enable xenodm
+  shell: rcctl enable xenodm
+  when: enable_xenodm

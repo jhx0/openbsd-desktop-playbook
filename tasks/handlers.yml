@@ -1,0 +1,6 @@
+---
+- name: generate login db
+  shell: cap_mkdb /etc/login.conf
+
+- name: restart sshd
+  shell: rcctl restart sshd

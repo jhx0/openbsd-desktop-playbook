@@ -1,4 +1,17 @@
-software_packages:
+---
+ansible_become_flags: "-"
+
+user_name: x
+
+sshd_port: 22
+
+php_version: "8.1.16"
+python_version: "3.9.16"
+
+enable_xenodm: true
+enable_openbox: true
+
+packages:
    - htop
    - vim--no_x11
    - curl
@@ -42,7 +55,7 @@ software_packages:
    - p7zip
    - pwgen
    - openvpn--
-   - php-8.1.12
+   - php-{{ php_version }}
    - mariadb-client
    - mariadb-server
    - samba
@@ -58,7 +71,7 @@ software_packages:
    - zsh-syntax-highlighting
    - ipcalc
    - ncftp
-   - python-3.9.15p0
+   - python-{{ python_version }}
    - py3-emoji
    - py3-requests
    - py3-colorama
@@ -84,3 +97,19 @@ software_packages:
    - obsdfreqd
    - stow
    - i3lock
+   - flameshot
+
+xfce_packages:
+   - xfce
+   - xfce4-screenshooter
+   - xfce4-power-manager
+   - thunar-media-tags
+   - xarchiver
+   - thunar-archive
+
+openbox_packages:
+   - openbox
+   - tint2
+   - pcmanfm
+   - picom
+   - feh

@@ -6,6 +6,4 @@
     owner: root
     group: wheel
     mode: '0640'
-
-- name: Restarting SSHD
-  shell: rcctl restart sshd
+  notify: restart sshd

@@ -1,0 +1,3 @@
+---
+- name: Upgrading system
+  syspatch:

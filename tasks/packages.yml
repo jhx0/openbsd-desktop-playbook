@@ -1,0 +1,5 @@
+---
+- name: Installing packages
+  openbsd_pkg:
+    name: "{{ packages }}"
+    state: present

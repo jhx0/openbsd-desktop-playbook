@@ -1,6 +1,7 @@
+---
 - name: Copying sysctl.conf
   copy:
-    src: sysctl.conf
+    src: files/sysctl/sysctl.conf
     dest: /etc/
     owner: root
     group: wheel

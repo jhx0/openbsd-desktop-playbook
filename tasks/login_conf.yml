@@ -1,0 +1,15 @@
+---
+- name: Altering login.conf
+  copy: 
+    src: files/login_conf/login.conf
+    dest: /etc/login.conf
+    owner: root
+    group: wheel
+    mode: '0644'
+  notify: generate login db
+
+- name: Make sure the login db is created
+  meta: flush_handlers
+
+- name: Adding "{{ user_name }}" to staff login class
+  shell: usermod -L staff "{{ user_name }}"

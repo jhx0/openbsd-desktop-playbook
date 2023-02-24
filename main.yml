@@ -1,0 +1,13 @@
+---
+- hosts: all
+  become: true
+  become_user: root
+  become_method: su
+
+  handlers:
+    - name: Include handlers
+      import_tasks: tasks/handlers.yml
+
+  tasks:
+    - import_tasks: tasks/main.yml
+      when: ansible_distribution == 'OpenBSD'

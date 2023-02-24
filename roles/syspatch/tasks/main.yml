@@ -1,8 +1,0 @@
----
-- name: Upgrading system (1)
-  shell: syspatch
-  ignore_errors: true
-
-- name: Upgrading system (2)
-  shell: syspatch
-  ignore_errors: true

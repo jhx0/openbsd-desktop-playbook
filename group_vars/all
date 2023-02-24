@@ -1,6 +1,0 @@
----
-ansible_become_flags: "-"
-
-user_name: x
-
-sshd_port: 22
