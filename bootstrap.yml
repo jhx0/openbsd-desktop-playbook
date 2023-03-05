@@ -1,0 +1,10 @@
+---
+- hosts: all
+  gather_facts: no
+  become: true
+  become_user: root
+  become_method: su
+
+  tasks:
+    - name: Installing Python
+      raw: pkg_add python%3.9
