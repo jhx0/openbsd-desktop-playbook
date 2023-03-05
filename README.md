@@ -46,8 +46,9 @@ reboot
 ```
 
 ## NOTE:
-Make sure to install python on the target before running this Playbook since Ansible needs python to be on the host to function.
+If **Python** is not already installed on the destionation host, you can run the supplied **bootstrap.yml** **Playbook** to do just that.
 ```Shell
-target# pkg_add python
+$ ansible-playbook bootstrap.yml (-Kk)
 ```
+
 Also, make sure to take a look at **vars/main.yml** to customize the Playbook.
