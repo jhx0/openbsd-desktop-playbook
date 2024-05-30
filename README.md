@@ -1,6 +1,6 @@
 # openbsd-desktop-playbook
 
-Automatically setup a **OpenBSD** desktop (**Xfce** and optionally **OpenBox**) via **Ansible**.
+Automatically setup a **OpenBSD** desktop (**Xfce**) via **Ansible**.
 
 ## USAGE:
 1. Clone/download this repository
@@ -39,7 +39,6 @@ sshd
 upgrade
 packages
 xfce
-openbox
 rcctl
 xenodm
 reboot
@@ -50,5 +49,7 @@ If **Python** is not already installed on the destionation host, you can run the
 ```Shell
 $ ansible-playbook bootstrap.yml (-Kk)
 ```
+
+**xenodm** is not enabled by default. You can change this by setting **xenodm_enable** to **true** (Under **vars/main.yml**)
 
 Also, make sure to take a look at **vars/main.yml** to customize the Playbook.

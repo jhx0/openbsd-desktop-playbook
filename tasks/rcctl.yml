@@ -5,6 +5,9 @@
 - name: Enabling DBUS
   shell: rcctl enable messagebus
 
+- name: Enabling APMD
+  shell: rcctl enable apmd
+
 - name: Enabling Vnstatd
   shell: rcctl enable vnstatd
 

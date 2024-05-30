@@ -5,11 +5,10 @@ user_name: x
 
 sshd_port: 22
 
-php_version: "8.1.16"
-python_version: "3.9.16"
+php_version: "8.1"
+python_version: "3.10"
 
-enable_xenodm: true
-enable_openbox: true
+enable_xenodm: false
 
 packages:
    - htop
@@ -21,15 +20,16 @@ packages:
    - noto-fonts
    - noto-cjk
    - noto-emoji
+   - wireshark
    - liberation-fonts
    - git
-   - exa
    - cowsay
    - figlet
    - ntfs_3g
    - mpv
    - ffmpeg
    - firefox
+   - chromium
    - tor-browser
    - thunderbird
    - go
@@ -41,75 +41,56 @@ packages:
    - zathura-pdf-mupdf
    - zathura-cb
    - mupdf--
-   - newsboat
+   - atril
    - cmatrix
    - lynx
-   - scrot
    - cmus
    - conky--
    - xdg-user-dirs-gtk
    - xdg-utils
    - dmenu
-   - slock
+   - rofi
    - dmidecode
    - p7zip
    - pwgen
    - openvpn--
-   - php-{{ php_version }}
+   - php%{{ php_version }}
    - mariadb-client
    - mariadb-server
    - samba
    - vsftpd
    - sshpass
-   - mutt--gpgme-sasl
    - rsync--iconv
    - unrar
-   - unzip--iconv
+   - unzip--
    - smartmontools
    - freerdp
-   - zsh
-   - zsh-syntax-highlighting
    - ipcalc
-   - ncftp
-   - python-{{ python_version }}
+   - python%{{ python_version }}
    - py3-emoji
    - py3-requests
    - py3-colorama
    - py3-beautifulsoup4
    - wireguard-tools
    - sox
-   - fish
    - clamav
    - tigervnc
    - x11vnc
    - pdfcrack
-   - xclip
-   - xdotool
-   - texlive_base
+   - ghostscript--
+   - texlive_base-2023
    - pandoc
-   - password-store
    - zstd
    - mediainfo
    - fzf
-   - ranger
-   - nsxiv
    - ansible
    - obsdfreqd
    - stow
-   - i3lock
    - flameshot
 
 xfce_packages:
    - xfce
-   - xfce4-screenshooter
-   - xfce4-power-manager
+   - xfce-extras
    - thunar-media-tags
    - xarchiver
    - thunar-archive
-
-openbox_packages:
-   - openbox
-   - tint2
-   - pcmanfm
-   - picom
-   - feh

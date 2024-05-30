@@ -29,9 +29,6 @@
   - import_tasks: tasks/xfce.yml
     tags: xfce
 
-  - import_tasks: tasks/openbox.yml
-    tags: openbox
-
   - import_tasks: tasks/rcctl.yml
     tags: rcctl
 
